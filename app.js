@@ -7,16 +7,16 @@ var student={
 document.addEventListener('DOMContentLoaded',contentLoaded);
 
 function contentLoaded(event){
-  document.getElemntByid('name').addEventListener("keyup",keyup);
+  document.getElementById('name').addEventListener("keyup",keyUp);
 }
-function keyup(event){
+function keyUp(event){
 
   calculateNumericOutput();
 
 }
 function calculateNumericOutput(){
-  student.name=doucument.getElementById('name').value;
-  var totalnameValue +=0;
+  student.name =doucument.getElementById('name').value;
+  var totalNameValue = 0;
   for(var i=0;i<student.name.length;i++)
   {
     totalNameValue+=studnt.name.charCodeAt(i);
